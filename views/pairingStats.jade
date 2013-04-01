@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 this is the h1
+    /    each stat in stats
+    /        .row
+    /            .span1
+    /            .span3.player-row.well.well-small #{stat.name1}
+    /            .span3.player-row.well.well-small #{stat.name2}
+    /            .span3.player-row.well.well-small #{stat.number}
+    /            .span1
