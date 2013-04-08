@@ -3,10 +3,16 @@ basePath = '../';
 files = [
   JASMINE,
   JASMINE_ADAPTER,
-  'app/lib/angular/angular.js',
-  'app/lib/angular/angular-*.js',
+  'public/lib/angular/angular.js',
+  'public/lib/angular/angular-*.js',
+  'test/lib/node/**/*.js',
+//  'node_modules/requirejs/**/*.js',
+//  'node_modules/express/node_modules/connect/lib/connect.js',
+//  'node_modules/express/lib/express.js',
   'test/lib/angular/angular-mocks.js',
-  'app/js/**/*.js',
+  'public/js/**/*.js',
+  'routes/**/*.js',
+  'services/**/*.js',
   'test/unit/**/*.js'
 ];
 
