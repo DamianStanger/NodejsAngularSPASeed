@@ -60,7 +60,7 @@ Requires [node.js](http://nodejs.org/), Testacular (`sudo npm install -g testacu
 or remote browser.
 
 * start `scripts/test.sh` (on windows: `scripts\test.bat`)
-  * a browser will start and connect to the Testacular server (Chrome is default browser, others can be captured by loading the same url as the one in Chrome or by changing the `config/testacular.conf.js` file)
+  * a browser will start and connect to the Testacular server (Chrome is default browser, others can be captured by loading the same url as the one in Chrome or by changing the `config/karma.conf.js` file)
 * to run or re-run tests just change any of your source or test javascript files
 
 
@@ -121,8 +121,8 @@ fetch the changes and merge them into your project with git.
         partial1.html
         partial2.html
 
-    config/testacular.conf.js        --> config file for running unit tests with Testacular
-    config/testacular-e2e.conf.js    --> config file for running e2e tests with Testacular
+    config/karma.conf.js        --> config file for running unit tests with Testacular
+    config/karma-e2e.conf.js    --> config file for running e2e tests with Testacular
 
     scripts/            --> handy shell/js/ruby scripts
       e2e-test.sh       --> runs end-to-end tests with Testacular (*nix)
