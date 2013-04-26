@@ -1,3 +1,4 @@
+/* global MyCtrl1, MyCtrl2 */
 'use strict';
 
 /* jasmine specs for controllers go here */

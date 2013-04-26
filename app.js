@@ -19,10 +19,10 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   //app.use(require('less-middleware')({ src: __dirname + '/public' }));
-    app.use(lessMiddleware({
-        src: __dirname + '/public',
-        compress: true
-    }));
+  app.use(lessMiddleware({
+      src: __dirname + '/public',
+      compress: true
+  }));
   app.use(express.static(path.join(__dirname, 'public')));
 });
 
