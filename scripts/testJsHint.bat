@@ -1,1 +1,1 @@
-node scripts\testJsHint.js app.js routes services public\js testAngular\unit testNode
+jsHintRunner app.js routes services public\js testAngular\unit testNode scripts

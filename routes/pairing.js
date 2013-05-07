@@ -1,16 +1,5 @@
 "use strict";
 
-exports.index = function (req, res) {
-  console.log("Get pairing stats");
-  res.writeHead(200, {
-    'Content-Type': 'application/json'
-  });
-  res.end(JSON.stringify(getPairs()));
-};
-
-
-
-
 function getPairs() {
   return {
     "pairingStats":{
@@ -36,3 +25,12 @@ function getPairs() {
     }
   };
 }
+
+exports.index = function (req, res) {
+  console.log("Get pairing stats");
+  res.writeHead(200, {
+    'Content-Type': 'application/json'
+  });
+  res.end(JSON.stringify(getPairs()));
+};
+

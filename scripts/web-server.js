@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+"use strict";
 
 var util = require('util'),
     http = require('http'),
@@ -7,13 +8,6 @@ var util = require('util'),
     events = require('events');
 
 var DEFAULT_PORT = 8000;
-
-function main(argv) {
-  new HttpServer({
-    'GET': createServlet(StaticServlet),
-    'HEAD': createServlet(StaticServlet)
-  }).start(Number(argv[2]) || DEFAULT_PORT);
-}
 
 function escapeHtml(value) {
   return value.toString().
@@ -239,6 +233,13 @@ StaticServlet.prototype.writeDirectoryIndex_ = function(req, res, path, files) {
   res.write('</ol>');
   res.end();
 };
+
+function main(argv) {
+  new HttpServer({
+    'GET': createServlet(StaticServlet),
+    'HEAD': createServlet(StaticServlet)
+  }).start(Number(argv[2]) || DEFAULT_PORT);
+}
 
 // Must be last,
 main(process.argv);
