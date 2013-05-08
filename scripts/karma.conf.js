@@ -1,4 +1,8 @@
-basePath = '../';
+/*global JASMINE, JASMINE_ADAPTER*/
+/*jshint unused:false*/
+"use strict";
+
+var basePath = '../',
 
 files = [
   JASMINE,
@@ -8,12 +12,12 @@ files = [
   'testAngular/lib/angular/angular-mocks.js',
   'public/js/**/*.js',
   'testAngular/unit/**/*.js'
-];
+],
 
-autoWatch = false;
-singleRun = true;
+autoWatch = false,
+singleRun = true,
 
-browsers = ['PhantomJS'];
+browsers = ['PhantomJS'],
 
 junitReporter = {
   outputFile: 'test_out/unit.xml',
