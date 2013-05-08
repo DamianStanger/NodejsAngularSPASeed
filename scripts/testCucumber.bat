@@ -1,1 +1,1 @@
-cucumber cucumber
+cucumber cucumber --format progress
