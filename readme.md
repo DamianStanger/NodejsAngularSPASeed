@@ -30,5 +30,11 @@ a gem install on a couple of gems im not sure why bundler cant manage them, unfo
 
 I tried to get headless browser testing with cucumber working but i had no luck installing cabybara-webkit or poltergeist on my ruby environment, im told its eiser on nix and mac.
 
+## node app
+start up the node app by going to the root dir and run ```node app.js```, this needs to be runnig for the cucumber tests to pass
+
+## Tests
+To run all the tests go to the root folder and run ```runTests.bat```
+
 ## Disclaimer
 I developed this seed application on windows 8 ultimate and have not tested it on mac or nix
